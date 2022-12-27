@@ -1,0 +1,27 @@
+{
+  "name": "tepafril/wordpress-eloquent",
+  "description": "Use WordPress backend with any PHP framework",
+  "homepage": "http://github.com/tepafril/wordpress-eloquent",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Afril T.",
+      "email": "tepafril@gmail.com",
+      "homepage": "http://odadcommerce.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Corcel\\": "src/",
+      "Corcel\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Corcel\\Laravel\\CorcelServiceProvider"
+      ]
+    }
+  }
+}
